@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Star Jedi";
+  src: url("./star-jedi-font/StarJedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Star Jedi Hollow";
+  src: url("./star-jedi-font/StarJediHollow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Star Jedi Rounded";
+  src: url("./star-jedi-font/StarJediRounded.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,900;1,100&display=swap");
+
+* {
+  --sw-yellow: #ffe81f;
+  transition-duration: 0.5s;
+  scrollbar-color: var(--sw-yellow) #000;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  background-color: #000;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--sw-yellow);
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  /* color: var(--sw-yellow); */
+  font-family: "Star Jedi";
+  text-transform: lowercase;
+}
+
+button {
+  background: black;
+  color: var(--sw-yellow);
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+  font-family: "Montserrat";
+  width: 200px;
+  cursor: pointer;
+  border: 2px solid var(--sw-yellow);
+}
+
+button:hover {
+  background: var(--sw-yellow);
+  color: black;
+}
+
+.MuiTableCell-body {
+  text-transform: capitalize;
+  font-family: "Montserrat" !important;
+}
+
+.MuiTableCell-head {
+  font-family: "Montserrat" !important;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  background: black;
+  color: var(--sw-yellow) !important;
+}
+
+.MuiTableBody-root {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.MuiPaper-root {
+  background: none !important;
+}
+
+.MuiTableCell-body {
+  color: white !important;
+}
+
+.MuiTableRow-root:hover {
+  background: black;
+}
+
+.MuiTableRow-root:hover .MuiTableCell-body {
+  color: var(--sw-yellow) !important;
+  border-top: 2px solid var(--sw-yellow);
+  border-bottom: 2px solid var(--sw-yellow);
+  transition-duration: 0s;
+}
+
+.nav-btn {
+  font-family: "Star Jedi";
+}
+
+#mui-container {
+  box-shadow: 0px 0px 15px 0px #ffe81f;
+}
+
+.MuiBox-root {
+  background: black !important;
+}
+
+.MuiBox-root h1 {
+  color: var(--sw-yellow);
+}
+
+.MuiBox-root {
+  border: 2px solid var(--sw-yellow) !important;
+  box-shadow: 0px 0px 15px 0px #ffe81f !important;
+}
+
+.pagination-btn {
+  width: 30px;
+  height: 100%;
+  font-family: "Star Jedi";
+}
+
+#header {
+  position: relative;
+  width: 99%;
+  display: flex;
+  margin-top: 25px;
+}
+
+#header a {
+  margin: auto;
+  font-family: "Star Jedi";
+  color: var(--sw-yellow);
+  text-decoration: none;
+}
+
+#header a:hover {
+  color: white;
+}
